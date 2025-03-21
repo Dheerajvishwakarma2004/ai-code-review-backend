@@ -44,7 +44,7 @@ app.post("/analyze", async (req, res) => {
             model: "deepseek-ai/DeepSeek-R1",
             messages: [{ role: "user", content: prompt }],
             provider: "hyperbolic",
-            max_tokens: 500,
+            max_tokens: 200,
         });
 
         res.json({ ai_feedback: output.choices[0]?.message?.content || "No response from AI" });
