@@ -43,7 +43,7 @@ app.post("/analyze", async (req, res) => {
         const output = await hf.chatCompletion({
             model: "deepseek-ai/DeepSeek-R1",
             messages: [{ role: "user", content: prompt }],
-            provider: "hyperbolic",
+            provider: "fireworks-ai",
             max_tokens: 200,
         });
 
