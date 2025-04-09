@@ -41,7 +41,7 @@ app.post("/analyze", async (req, res) => {
 
     try {
         const output = await hf.chatCompletion({
-            model: "deepseek-ai/DeepSeek-R1",
+            model: "deepseek-ai/DeepSeek-V3-0324",
             messages: [{ role: "user", content: prompt }],
             provider: "fireworks-ai",
             max_tokens: 200,
